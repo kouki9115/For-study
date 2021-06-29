@@ -5,5 +5,8 @@
 <h3>blog title</h3>
 <%=blog.title %>
 <h3>blog body</h3>
-<%=blog.body %>
+<%=blog.body %><br>
+<%=link_to "show", blog_path(blog) %><br>
+<%=link_to "edit", edit_blog_path(blog) %>
+<%=link_to "destroy", blog_path(blog), method: :delete %>
 <% end %>
