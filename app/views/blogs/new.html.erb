@@ -1,7 +1,9 @@
 <h1>Blogs#new</h1>
 
 <%=form_with model: @blog, local:true do |f| %>
+<h3>blog title</h3>
 <%=f.text_field :title %>
+<h3>blog body</h3>
 <%=f.text_area :body %>
 <%=f.submit "post" %>
 <% end %>
