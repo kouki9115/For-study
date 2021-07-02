@@ -3,6 +3,15 @@
     模索中
  </p>
 
+<% for i in 1..5 %>
+  <% random = rand(20..25) %>
+   <%= random %>
+   <% if random == 25 %>
+   <%= "finish" %>
+   <% break %>
+   <% end %>
+ <% end %>
+
 <%= link_to "blogs", blogs_path %>
 <%= link_to "new", new_blog_path %>
 
