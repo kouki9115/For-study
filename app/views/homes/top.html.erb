@@ -3,13 +3,19 @@
     模索中
  </p>
 
+<h3>今日の勉強</h3>
 <div>
-<% for i in 1..5 %>
-  <% random = rand(20..25) %>
+<% for i in 1..10 %>
+  <% random = rand(1..5) %>
    <%= random %>
-   <% if random == 25 %>
-   <%= "finish" %>
-   <% break %>
+   <% if random == 5 %>
+    <h6>今日は休日にしよう</h6>
+    <div><%= image_tag 'beer.jpg', width:"300",height:"300" %></div>
+    <% break %>
+   <% elsif random == 3 %>
+    <h6>今日は死ぬ気で勉強に決定</h6>
+    <div><%= image_tag 'suit.jpg', width:"300",height:"300" %></div>
+    <% break %>
    <% end %>
  <% end %>
 </div>
