@@ -26,7 +26,12 @@
   alert(hello)
 
 $(document).ready(function () {
-  $('.jquery').on('click', function(){
+  $('.aaa').on('click', function(){
     $(this).css('color','red');
   });
 });
+
+let input = prompt("文字を入力")
+alert(input)
+
+
