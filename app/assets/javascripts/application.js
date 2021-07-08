@@ -35,8 +35,5 @@ let input = prompt("文字を入力")
 alert(input)
 
 $(function(){
-  $('.box1').css({
-    'background-color': '#0000FF',
-    'height': '100px'
-  });
+  $('.box1').slideDown();
 });
